@@ -25,7 +25,7 @@
 </div>
 <a class="forpass" href="#">Forget password?</a>
 <div class="loginbtn">
-    <button>Login</button>
+    <button onclick="signIn()">Login</button>
 </div>
 
 <p class="signup-para">Or Sign Up Using</p>
@@ -37,9 +37,9 @@
 
 <p class="signup-para create">Or Create an Account</p>
 <div class="create-div">
-<button id="myButton" class="create-btn">Create new Account</button>
+<button id="myButton" onclick="signUpPage()" class="create-btn">Create new Account</button>
 
-<script>
+<!-- <script>
     // Attach an event listener to the button
     document.getElementById('myButton').addEventListener('click', function() {
       // Use SweetAlert2 to display a pop-up
@@ -50,7 +50,7 @@
         confirmButtonText: 'OK'
       });
     });
-  </script>
+  </script> -->
 </div> 
 </div>
 

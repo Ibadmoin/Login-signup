@@ -206,7 +206,7 @@ filter: drop-shadow( rgba(0, 0, 0, 0.35) 0px 5px 5px);
  }
 
  .create{
-    margin: 80px;
+    margin-top: 40px;
  }
 
  .create-btn{
@@ -251,5 +251,10 @@ filter: drop-shadow( rgba(0, 0, 0, 0.35) 0px 5px 5px);
  .create-div{
     height: 30px;
     text-align: center;
-    margin-top: -70px;
+    margin-top: 15px;
+ }
+
+
+ .signupCard{
+    min-height: 550px;
  }
