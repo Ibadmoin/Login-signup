@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 300px;
+    background: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.logincard{
+    background: #fff;
+    width: 350px;
+    min-height: 500px;
+    border-radius: 5px;
+    margin-top: 150px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.login, h2{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-bottom: 15px;
+
+
+
+}
+.login, p{
+    /* background: red; */
+    margin-top: 15px;
+    padding-left: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+
+}
+
+.emailcont{
+    /* background: green; */
+    height: 30px;
+    position: relative;
+    text-align: center;
+}
+.emailcont input{
+    width: 90%;
+    height: 100%;
+    padding-left: 25px;
+    border: none;
+    border-bottom:1px solid #000;    
+}
+.emailcont input:focus {
+    outline: none;
+    border-bottom:2px solid green ;
+    color: green;
+}
+.emailcont input::placeholder{
+    color: #999;
+    
+}
+.emailcont i {
+    position: absolute;
+    left: 25px;
+    top: 24%;
+}
+/* pass */
+.passcont{
+    height: 30px;
+    position: relative;
+    text-align: center;
+}
+.passcont input{
+    width: 90%;
+    height: 100%;
+    padding-left: 25px;
+    border: none;
+    border-bottom:1px solid #000;    
+}
+.passcont input:focus {
+    outline: none;
+    border-bottom:2px solid green ;
+    color: green;
+}
+.passcont input::placeholder{
+    color: #999;
+    
+}
+.passcont i {
+    position: absolute;
+    left: 25px;
+    top: 24%;
+    font-weight: 600;
+    
+}
+
+input:focus::placeholder{
+   animation: placeholderanime 0.3s ease-out forward;
+}
+
+@keyframes placeholderanime {
+    from{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+}
+
+
+.forpass{
+    /* background: #000; */
+    position: absolute;
+    right :10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9em;
+
+}
+
+
+.loginbtn{
+    /* background: #000; */
+    margin-top: 45px;
+    height: 30px;
+    text-align: center;
+
+
+}
+.loginbtn button {
+    width: 70%;
+    height: 100%;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(
+        90deg,
+        hsl(184deg 66% 63%) 0%,
+        hsl(187deg 83% 54%) 0%,
+        hsl(190deg 100% 49%) 1%,
+        hsl(193deg 100% 50%) 2%,
+        hsl(195deg 100% 50%) 5%,
+        hsl(197deg 100% 50%) 8%,
+        hsl(199deg 100% 50%) 13%,
+        hsl(202deg 100% 50%) 20%,
+        hsl(224deg 100% 70%) 29%,
+        hsl(254deg 100% 74%) 40%,
+        hsl(278deg 100% 69%) 57%,
+        hsl(296deg 90% 59%) 91%
+      );
+      color: #fff;
+      text-transform:uppercase ;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      animation: .1s ease-in all;
+      cursor: pointer;
+
+    
+}
+.loginbtn button:hover{
+transform: scale(1.01);
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+}
+.signup-para{
+    text-align: center;
+    padding: 0px;
+    font-size: 0.8em;
+    color: #999
+
+
+
+
+}
+.social{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.social i {
+    font-size: 2em;
+    margin-top: 5px;
+animation: .1s ease-in all;
+}
+ .social i:hover{
+    transform: scale(1.01);
+
+filter: drop-shadow( rgba(0, 0, 0, 0.35) 0px 5px 5px); 
+ }
+
+ .create{
+    margin: 80px;
+ }
+
+ .create-btn{
+    width: 70%;
+    width: 70%;
+    height: 100%;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(
+        90deg,
+        hsl(184deg 66% 63%) 0%,
+        hsl(187deg 83% 54%) 0%,
+        hsl(190deg 100% 49%) 1%,
+        hsl(193deg 100% 50%) 2%,
+        hsl(195deg 100% 50%) 5%,
+        hsl(197deg 100% 50%) 8%,
+        hsl(199deg 100% 50%) 13%,
+        hsl(202deg 100% 50%) 20%,
+        hsl(224deg 100% 70%) 29%,
+        hsl(254deg 100% 74%) 40%,
+        hsl(278deg 100% 69%) 57%,
+        hsl(296deg 90% 59%) 91%
+      );
+      color: #fff;
+      text-transform:capitalize ;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      animation: .1s ease-in all;
+      cursor: pointer;
+
+
+ }
+ .create-div button:hover{
+    transform: scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    
+    }
+
+
+ .create-div{
+    height: 30px;
+    text-align: center;
+    margin-top: -70px;
+ }

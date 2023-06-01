@@ -108,3 +108,22 @@ function signin(){
         alert("Access denied@!");
     }
 }
+
+
+
+// placeholder anime
+
+
+document.getElementById("email").addEventListener("focus",function(){
+    this.placeholder = "";
+})
+document.getElementById("email").addEventListener("blur",function(){
+    this.placeholder = "Type you email";
+})
+document.getElementById("password").addEventListener("focus",function(){
+    this.placeholder = "";
+
+})
+document.getElementById("password").addEventListener("blur",function(){
+    this.placeholder = "Type your password";
+})
